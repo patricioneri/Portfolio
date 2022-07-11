@@ -1,0 +1,365 @@
+/* fondo #212121 */
+/* botones #00ffbb */
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+/* -----------generalStyles--------------------- */
+
+.sectionTitle {
+    font-size: 3.5rem;
+}
+
+.sectionSubtitle {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: #00ffbb;
+}
+
+.sectionSubtitleContainer {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.line {
+    background-color: #00ffbb;
+    width: 6rem;
+    height: 0.3rem;
+    margin-left: 1.2rem;
+}
+
+/* -----------Grids--------------------- */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8rem 1fr 1fr 1fr .8fr 12rem;
+    grid-template-areas:    "nav nav nav nav"
+                            "inicio inicio inicio inicio"
+                            "sobremi sobremi sobremi sobremi"
+                            "proyectos proyectos proyectos proyectos"
+                            "contacto contacto contacto contacto"
+                            "footer footer footer footer";
+}
+
+/* --------navbarStyle----------- */
+
+.navbar {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgContainer {
+    width: 40%;
+    display: flex;
+    justify-content: left;
+}
+
+.imgContainer img {
+    width: 8rem;
+    margin-left: 15rem;
+}
+
+.itemsContainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    font-size: 1.6rem;
+}
+
+.navbarItems {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbarItems a {
+    transition: color .5s;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbarItems a:hover {
+    color: #00ffbb;
+}
+
+/* --------inicioStyle----------- */
+
+.inicio {
+    grid-area: inicio;
+    display: flex;
+}
+
+.callToActionContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgInicioContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgInicio {
+    width: 55rem;
+    margin-bottom: 10rem;
+}
+
+.greeting {
+    font-size: 1.8rem;
+    font-family: lato;
+    font-weight: 300;
+    letter-spacing: .3rem;
+}
+
+.emojiBlink {
+    width: 2.2rem;
+}
+
+.name {
+    font-size: 8rem;
+    letter-spacing: .8rem;
+}
+
+.job {
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    color: #00ffbb;
+    letter-spacing: .3rem;
+}
+
+.emojiNerd {
+    width: 2.5rem;
+    margin-left: .5rem;
+}
+
+.description {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+    font-weight: 300;
+}
+
+.callToActionButton {
+    width: 18rem;
+    height: 5rem;
+    margin-top: 2.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    outline: none;
+    background-color: #00ffbb;
+    cursor: pointer;
+}
+
+/* --------sobreMiStyle----------- */
+
+.sobreMi {
+    grid-area: sobremi;
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobreMiContainer {
+    width: 80%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.sobreMiImg {
+    width: 50rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
+}
+
+.sobreMiImgContainer {
+    border-top: #0fb solid .8rem;
+    border-left: #0fb solid .8rem;
+    width: 45%;
+}
+
+.sobreMiText {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.sobreMiText p {
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+    font-weight: 300;
+}
+
+/* --------proyectosStyle----------- */
+
+.proyectos {
+    grid-area: proyectos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proyectosContainer {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.cardsContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33rem;
+    height: 40rem;
+    background-color: #262626;
+    border-radius: 3rem;
+    box-shadow: 2px 1px 2px rgba(200, 200, 200, 0.1);
+    transition: all 0.3s;
+}
+
+.cardTitle {
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.card a img {
+    width: 80%;
+    border-radius: 1rem;
+    margin-top: 2rem;
+}
+
+.cardLink {
+    display: flex;
+    justify-content: center;
+}
+
+.card p {
+    width: 80%;
+    font-size: 1.6rem;
+    margin-top: 2.5rem;
+    font-weight: 300;
+}
+
+.card:hover {
+    background-color: #00ffbb;
+    color: #000;
+}
+
+/* --------proyectosStyle----------- */
+
+.contacto {
+    grid-area: contacto;
+    background-color: #262626;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h2 {
+    margin-top: 5rem;
+}
+
+.contactoContainer {
+    width: 100%;
+    display: flex;
+}
+
+.contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socialMedia {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 3.5rem;
+    background-color: #00ffbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle a img {
+    width: 3rem;
+}
+
+.circleText {
+    display: flex;
+    align-items: center;
+    width: 35rem;
+    margin-top: 2rem;
+}
+
+.circleData {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    transition: all .5s;
+}
+
+.circleData:hover {
+    text-decoration: underline;
+}
+
+/* --------footerStyle----------- */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

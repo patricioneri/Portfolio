@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap" rel="stylesheet">
+    
+    <title>El portfolio de Pato !</title>
+</head>
+
+<body class="gridContainer">
+        <nav class="navbar">
+            <div class="imgContainer">
+                <a href="#inicio"><img src="./assets/icon/icon.png" alt="logo"></a>
+            </div>
+            <div class="itemsContainer">
+                <ul class="navbarItems">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobreMi">Sobre mí</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    <main class="inicio" id="inicio">
+        <div class="callToActionContainer">
+            <div>
+                <h3 class="greeting">HOLA! <img class="emojiBlink" src="./assets/icon/blink.png" alt="blink">  SOY  </h3>
+                <h1 class="name">Patricio <br> García</h1>
+                <h3 class="job">FRONTEND DEVELOPER  <img class="emojiNerd" src="./assets/icon/nerd.png" alt="nerd"></h3> 
+                <p class="description">Soy Licenciado en Biotecnología, Técnico en Mecatronica <br> y Desarrollador Frontend.</p>
+                <button class="callToActionButton">Contáctame</button>
+            </div>
+        </div>
+        <div class="imgInicioContainer">
+            <img class="imgInicio" src="./assets/images/avatar.png" alt="avatar">
+        </div>
+    </main>
+    <section class="sobreMi" id="sobreMi">
+        <div class="sectionSubtitleContainer">
+            <h5 class="sectionSubtitle">Quien soy ? </h5> <span class="line"></span>
+        </div>
+        <div class="sobreMiContainer">
+            <div class="sobreMiImgContainer">
+                <img class="sobreMiImg" src="./assets/images/sobremi.jpg" alt="sobreMi">
+            </div>
+            <div class="sobreMiText">
+                <h2 class="sectionTitle">Sobre mí</h2>
+                <p>Soy Patricio García, <b>Técnico Superior en Mecatrónica, Licenciado en Biotecnología y estudiante de la carrera Frontend
+                    Developer</b>. En la actualidad estoy estudiando JavaScript y React js en la academia Coderhouse, mientras desempeño
+                    actividades de investigación como parte de un plan de beca doctoral. Durante mis estudios como Técnico en
+                    Mecatrónica y Biotecnólogo, tuve mis primeros acercamientos con la programación con pseudocodigo y lenguajes como
+                    C++ y Python. En el ultimo tiempo, comencé a interesarme nuevamente en la programación, puntualmente en el área de
+                    Frontend pero mi objetivo es llegar a ser Full Stack. </p>
+                <p>
+                    En el área de desarrollo web cuento con conocimientos en <strong> CSS, HTML</strong> y habilidades en el maquetado de <strong>sitios web
+                    responsive</strong>. Adicionalmente, poseo conocimientos en <strong>Javascript</strong>, a la vez de que estoy en continua formación con este
+                    lenguaje, así como también en el manejo del <strong>controlador de versiones Git y en GitHub</strong>. Por ultimo, estoy
+                    familiarizado con el uso de librerías como <strong>Bootstrap</strong>.</p>
+                    <a href="./assets/Garcia_resume.pdf" download="Garcia_resume" target="_blank"><button class="downloadCvButton callToActionButton">Descargar mi CV</button></a> 
+            </div>
+            
+        </div> 
+    </section>
+    <section class="proyectos" id="proyectos">
+        <div class="sectionSubtitleContainer">
+            <h5 class="sectionSubtitle">Que hago ? </h5> <span class="line"></span>
+        </div>
+        <div class="proyectosContainer">
+            <h2 class="sectionTitle">Proyectos</h2>
+            <div class="cardsContainer">
+                <div class="tubirrita card">
+                    <a class="cardLink" href="https://patricioneri.github.io/tu_birrita/" target="_blank"><img src="./assets/images/tubirrita.png" alt="linkTuBirrita"></a>
+                    <h4 class="cardTitle">Tu Birrita</h4>
+                    <p>Sitio para encontrar las ofertas de cerveza en Palermo, Buenos Aires. El sitio es <strong> full-responsive </strong> y fue realizado con
+                        <strong> HTML5 y CSS3 </strong></p>
+                </div>
+                <div class="tubirrita2 card">
+                    <a class="cardLink" href="https://patricioneri.github.io/Proyecto_TuBirrita2.0/" target="_blank"><img src="./assets/images/tubirrita2.png" alt="linkTuBirrita2"></a>
+                    <h4 class="cardTitle">Tu Birrita 2</h4>
+                    <p>Rediseño del sitio Tu Birrita.</p>
+                </div>
+                <div class="baseDeDatos card">
+                    <a class="cardLink" href="#" target="_blank"><img src="./assets/images/basededatos.png" alt="baseDeDatos"></a>
+                    <h4 class="cardTitle">Base de datos</h4>
+                    <p>Simulación de base de datos de una clínica. El sitio almacena pacientes utilizando el Storage y puede calcular el IMC de cada uno. Realizado con <strong>HTML5, CSS3, Bootstrap y vanilla JavaScript.</strong> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacto" id="contacto">
+        <div class="sectionSubtitleContainer">
+            <h5 class="sectionSubtitle">Como contactarme ? </h5> <span class="line"></span>
+        </div>
+        <h2 class="sectionTitle">Contacto</h2>
+        <div class="contactoContainer">
+            <div class="contact">
+                <div class="whatsappContainer circleText">
+                    <div class="circle">
+                        <a href="https://api.whatsapp.com/send?phone=543425385070" target="_blank"><img src="./assets/icon/whatsapp.png" alt="whatsappIcon"></a>
+                    </div>
+                    <a class="circleData" href="https://api.whatsapp.com/send?phone=543425385070" target="_blank">+543425385070</a>
+                </div>
+                <div class="gmailContainer circleText">
+                    <div class="circle">
+                        <a href="mailto:elcorreoquequieres@correo.com" target="_blank"><img src="./assets/icon/gmail.png" alt="gmailIcon"></a>
+                    </div>
+                    <a class="circleData" href="mailto:elcorreoquequieres@correo.com" target="_blank">patricionerigarcia.dev@gmail.com</a>
+                </div>
+            </div>
+            <div class="socialMedia">
+                <div class="linkedInContainer circleText">
+                    <div class="circle">
+                        <a href="https://www.linkedin.com/in/patricioneri/" target="_blank"><img src="./assets/icon/linkedin.png" alt="linkedInIcon"></a>
+                    </div>
+                    <a class="circleData" href="https://www.linkedin.com/in/patricioneri/" target="_blank">linkedin.com/in/patricioneri</a>
+                </div>
+                <div class="Twitter circleText">
+                    <div class="circle">
+                        <a href="https://twitter.com/soyPatoDev?t=GEN19rp4MnGn8vm4Flwd8Q&s=08" target="_blank"><img src="./assets/icon/twitter.png" alt="TwitterIcon"></a>
+                    </div>
+                    <a class="circleData" href="https://twitter.com/soyPatoDev?t=GEN19rp4MnGn8vm4Flwd8Q&s=08" target="_blank">@soyPatoDev</a>
+                </div>
+                <div class="gitHub circleText">
+                    <div class="circle">
+                        <a href="https://github.com/patricioneri" target="_blank"><img src="./assets/icon/github.png" alt="gitHubIcon"></a>
+                    </div>
+                    <a class="circleData" href="https://github.com/patricioneri" target="_blank">github.com/patricioneri</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="imgContainer">
+            <img src="./assets/icon/icon.png" alt="logo">
+        </div>
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
