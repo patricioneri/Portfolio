@@ -79,6 +79,7 @@ html {
 
 .itemsContainer {
     width: 60%;
+    align-items: center;
     display: flex;
     justify-content: center;
 }
@@ -88,7 +89,7 @@ html {
 }
 
 .navbarItems {
-    width: 100%;
+    width: 90%;
     display: flex;
     list-style: none;
     justify-content: space-evenly;
@@ -104,6 +105,23 @@ html {
 
 .navbarItems a:hover {
     color: #00ffbb;
+}
+
+.ham {
+    width: 10%;
+    display: none;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.ham span {
+    display: block;
+    background-color: #f3f3f3;
+    height: 0.3rem;
+    width: 2.8rem;
+    margin: 1rem auto;
+    border-radius: 0.2rem;
 }
 
 /* --------inicioStyle----------- */
@@ -174,8 +192,14 @@ html {
     border-radius: 2.5rem;
     border: none;
     outline: none;
+    text-decoration: none;
     background-color: #00ffbb;
     cursor: pointer;
+}
+
+.callToActionButton a {
+    text-decoration: none;
+    color: #000;
 }
 
 /* --------sobreMiStyle----------- */
@@ -223,6 +247,10 @@ html {
     font-weight: 300;
 }
 
+.sobreMiText a {
+    text-decoration: none;
+}
+
 /* --------proyectosStyle----------- */
 
 .proyectos {
@@ -259,6 +287,7 @@ html {
     border-radius: 3rem;
     box-shadow: 2px 1px 2px rgba(200, 200, 200, 0.1);
     transition: all 0.3s;
+    margin: 2rem 2rem;
 }
 
 .cardTitle {
@@ -363,3 +392,307 @@ html {
     justify-content: left;
     align-items: center;
 }
+
+
+/* ---------Dispositivos---------------- */
+
+@media (max-width: 1276px) {
+    
+    /* ------gridsResponsive1276-------- */
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8rem 0.4fr 1fr 1fr .6fr 12rem;
+        grid-template-areas:    "nav "
+                                "inicio"
+                                "sobremi"
+                                "proyectos"
+                                "contacto"
+                                "footer";
+    }
+
+    /* ------inicioResponsive1276-------- */
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    .callToActionContainer {
+        width: 100%;
+    }
+
+    .imgInicioContainer {
+        width: 100%;
+    }
+
+    .description {
+        width: 90%;
+    }
+
+    /* ------sobreMiResponsive1276-------- */
+    
+    .sobreMiContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .sobreMiText {
+        width: 100%;
+        align-items: center;
+    }
+
+    .sobreMiText h2 {
+        margin: auto;
+    }
+
+    .sobreMiText a  {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sobreMiImgContainer {
+        padding-left: 2rem;
+    }
+
+    .sobreMiImg {
+        width: 40rem;
+    }
+}
+
+@media (max-width: 768px) {
+    
+    /* ------menuResponsive768-------- */
+    
+    .ham {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2.5rem;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .itemsContainer {
+        width: 100%;
+    }
+
+    .imgContainer img {
+        margin-left: 6rem;
+    }
+
+    .navbarItems {
+        flex-direction: column;
+        z-index: 1;
+        display: none;
+    }
+
+    .navbarItems li {
+        display: flex;
+    }
+
+    .navbarItems.activado {
+        display: flex;
+        justify-content: space-around;
+        background-color: #262626;
+        width: 100%;
+        height: 90vh;
+        
+    }
+
+    /* ------gridsResponsive768-------- */
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8rem 0.5fr 1fr 1fr .6fr 12rem;
+        grid-template-areas:    "nav "
+                                "inicio"
+                                "sobremi"
+                                "proyectos"
+                                "contacto"
+                                "footer";
+    }
+
+    /* ------inicioResponsive768-------- */
+
+    .inicio {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+
+    /* ------sobreMiResponsive768-------- */
+
+    .sobreMiImgContainer {
+        align-self: flex-start;
+    }
+
+    .sobreMiText {
+        margin-top: 2rem;
+    }
+
+
+    /* ------contactoResponsive768-------- */
+
+    .contactoContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 572px) { 
+
+    /* ------gridsResponsive572-------- */
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8rem 0.6fr 0.8fr 1fr .5fr 10rem;
+        grid-template-areas:    "nav "
+                                "inicio"
+                                "sobremi"
+                                "proyectos"
+                                "contacto"
+                                "footer";
+    }
+
+    /* ------inicioResponsive572-------- */
+
+    .imgInicio {
+        width: 45rem;
+    }
+
+}
+    
+@media (max-width: 480px) {
+    /* ------gridsResponsive572-------- */
+
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 8rem 0.4fr 0.8fr 1fr .4fr 10rem;
+        grid-template-areas:    "nav "
+                                "inicio"
+                                "sobremi"
+                                "proyectos"
+                                "contacto"
+                                "footer";
+    }
+
+        /* ------inicioResponsive480-------- */
+
+        .imgInicio {
+            width: 35rem;
+        }
+
+        .greeting {
+            font-size: 1.4rem;
+        }
+
+        .name {
+            font-size: 6.5rem;
+            letter-spacing: .7rem;
+        }
+
+        .job {
+            font-size: 1.6rem;
+        }
+
+        .emojiBlink {
+            width: 2rem;
+        }
+
+        .emojiNerd {
+            width: 2.2rem;
+        }
+
+        .description {
+            font-size: 1.5rem;
+        }
+
+        .callToActionButton {
+            width: 15rem;
+            height: 5rem;
+            pointer-events: none;
+        }
+
+        .callToActionButton a {
+            font-size: 1.3rem;
+        }
+
+        /* ------sobreMiResponsive480-------- */
+
+        .sobreMiImg {
+            width: 30rem;
+            margin-left: 0rem;
+        }
+        
+        .sobreMiImgContainer {
+            width: 90%;
+        }
+        
+        .sobreMiText {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+        }
+        
+        .sobreMiText p {
+            font-size: 1.5rem;
+        }
+
+        .imgContainer img {
+            margin-left: 2rem;
+        }
+
+        .callToActionContainer div {
+            margin-left: 1rem;
+        }
+
+        /* ------proyectosResponsive480-------- */
+
+        .cardsContainer {
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            width: 30rem;
+            height: 35rem;
+        }
+
+
+
+        /* ------contactoResponsive480-------- */
+
+        .contactoContainer {
+            margin-top: 2rem;
+        }
+
+        .circle {
+            width: 5rem;
+            height: 5rem;
+            border-radius: 2.5rem;
+        }
+
+        .circle a img {
+            width: 2rem;
+        }
+
+        .circleData {
+            font-size: 1.3rem;
+            margin-left: 1rem;
+        }
+
+        .circleData:hover {
+            text-decoration: none;
+        }
+
+}
+
+
